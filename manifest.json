@@ -1,0 +1,15 @@
+{
+  "name": "Event Page test",
+  "description": "Demonstrates logging of http status codes",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": ["alarms", "tabs", {"fileSystem": ["write"]}, "webRequest", "*://*/*"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon" : "icon.png",
+    "default_title": "Start Event Page"
+  }
+}
